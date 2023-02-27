@@ -1,0 +1,37 @@
+batch:
+  file:
+    path: "/home/cnb/scdf/"
+  ftp:
+    server: "192.168.0.5"
+    user: "DIR-N-0153"
+    password: "123456"
+    path: "C:\\amazing\\DataflowProject\\Maven\\resources\\test\\"
+    path2: "/amazing/DataflowProject/Maven/resources/test2/"
+search:
+  date:
+    from: ${from:NONE}
+    to: ${to:NONE}
+    greaterThan: ${greaterThan:NONE}
+spring:
+  main:
+    web-application-type: none
+    web-environment: false
+  batch:
+    jdbc:
+      initialize-schema: "always"
+  datasource:
+    url: jdbc:mysql://localhost:3306/second?allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: user02
+    password: user02
+  integration:
+    channel:
+      auto-create: false
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          elasticsearch:
+            client.WIRE: trace
