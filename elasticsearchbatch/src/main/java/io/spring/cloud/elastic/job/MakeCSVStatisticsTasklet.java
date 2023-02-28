@@ -269,10 +269,10 @@ public class MakeCSVStatisticsTasklet implements Tasklet {
                 "Sort","Cat.","Count","Percent"
         });
 
-        // -
+
         sortIterator((HashMap) cases,"CASES");
         data.add(new String[]{"   "});
-        //CVC 4행
+
         data.add(new String[]{
                 "==========","Details","==========","=========="
         });

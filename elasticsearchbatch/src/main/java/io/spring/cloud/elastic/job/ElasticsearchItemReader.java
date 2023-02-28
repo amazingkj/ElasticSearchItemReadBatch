@@ -2,7 +2,6 @@ package io.spring.cloud.elastic.job;
 
 import lombok.Builder;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.batch.core.configuration.annotation.StepScope;
 import org.springframework.batch.item.data.AbstractPaginatedDataItemReader;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.data.domain.PageRequest;
