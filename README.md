@@ -1,6 +1,7 @@
 # ElasticSearchItemReadBatch
 - Batch statistics were successfully extracted using the code, but are not recommended due to very slow processing.
-- Log application > Filebeat > Kafka > logstash > elastic & Quartz > SCDF > elasticReadbatch > CSV file 
+- Logging application > Filebeat > Kafka > logstash > elastic 
+- Quartz > SCDF > Batch > CSV file 
 
 ## 1. Filebeat
 
